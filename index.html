@@ -1,59 +1,58 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br"> 
 
-<!-- Grupo Juan M. -->
+<!-- Grupo Juan M. --> 
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clima Time</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/weather-forecast.png" id="icon2">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<head> <!-- Início do cabeçalho do documento -->
+    <meta charset="UTF-8"> <!-- Definindo a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configurando a viewport para dispositivos móveis -->
+    <title>Clima Time</title> <!-- Definindo o título da página -->
+    <link rel="stylesheet" href="css/main.css"> <!-- Importando o arquivo de estilo principal -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/weather-forecast.png" id="icon2"> <!-- Configurando o ícone da página -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Importando a biblioteca de ícones -->
 </head>
 
-<body>
-    <div class="image">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg" alt="" id="background">
-        <div class="glass"></div>
+<body> <!-- Início do corpo do documento -->
+    
+    <div class="image"> <!-- Div para o fundo base da página -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg" alt="" id="background"> <!-- Inserindo a imagem de fundo -->
+        <div class="glass"></div> <!-- Criando um efeito de vidro sobre a imagem de fundo -->
     </div>
-    <span id="horario"></span>
+    <span id="horario"></span> <!-- Span para exibir o horário -->
 
-    <main>
-        
+    <main> <!-- Início da seção principal do conteúdo -->
 
-        <div>
-            <div class="nomeCidade">
-                <h1 id="nome"></h1>
-                <img alt="" id="iconPais">
+        <div> <!-- Div para separar da div container -->
+            <div class="nomeCidade"> <!-- Div para o nome da cidade -->
+                <h1 id="nome"></h1> <!-- Título da cidade -->
+                <img alt="" id="iconPais"> <!-- Ícone representando o país -->
             </div>
             
-            <div class="temperatura">
-                <img alt="" id="iconClima">
-                <span id="temperatura"></span>
+            <div class="temperatura"> <!-- Div para exibir a temperatura -->
+                <img alt="" id="iconClima"> <!-- Ícone representando o clima -->
+                <span id="temperatura"></span> <!-- Span para exibir a temperatura -->
             </div>
         </div>
 
-        <div class="container">
-            <div class="umidade">
-                <strong><i class='bx bx-water' ></i> Umidade:</strong> <span id="umidade"></span>
+        <div class="container"> <!-- Div container para agrupar informações adicionais -->
+            <div class="umidade"> <!-- Div para exibir a umidade -->
+                <strong><i class='bx bx-water' ></i> Umidade:</strong> <span id="umidade"></span> <!-- Ícone e texto da umidade -->
             </div>
-            <div class="veloVento">
-                <strong><i class='bx bx-wind' ></i> Velocidade do vento:</strong> <span id="veloVento"></span>
+            <div class="veloVento"> <!-- Div para exibir a velocidade do vento -->
+                <strong><i class='bx bx-wind' ></i> Velocidade do vento:</strong> <span id="veloVento"></span> <!-- Ícone e texto da velocidade do vento -->
             </div>
-            <div class="clima">
-                <strong><i class='bx bxs-cloud' ></i> Clima: </strong><span id="clima"></span>
+            <div class="clima"> <!-- Div para exibir o tipo de clima -->
+                <strong><i class='bx bxs-cloud' ></i> Clima: </strong><span id="clima"></span> <!-- Ícone e texto do tipo de clima -->
             </div>
         </div>
 
-        <div class="pesquisar">
-            <input type="text" id="pesquisar" value="Marilia" placeholder="Procurar...">
-            <i class='bx bx-search-alt' ></i>
+        <div class="pesquisar"> <!-- Div para a barra de pesquisa -->
+            <input type="text" id="pesquisar" value="Marilia" placeholder="Procurar..."> <!-- Campo de entrada de texto para pesquisa -->
+            <i class='bx bx-search-alt' ></i> <!-- Ícone de pesquisa -->
         </div>
 
-    </main>
+    </main> <!-- Fim da seção principal do conteúdo -->
 
-</body>
-<script src="js/index.js"></script>
-
-</html>
+</body> <!-- Fim do corpo do documento -->
+<script src="js/index.js"></script> <!-- Incluindo o script JavaScript -->
+</html> <!-- Fim do elemento HTML -->

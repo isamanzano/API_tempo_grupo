@@ -1,15 +1,15 @@
-.toast {
-    position: absolute;
-    font-size: 1.1em;
-    padding: 1rem;
-    background-color: #ef233c;
-    border-radius: 7px;
-    color: white;
-    right: 50%;
-    top: 1rem;
-    transform: translateX(50%);
+ .toast {              /*Início da classe .toast --> */
+    position: absolute;  /*A posição do elemento é definida como absoluta*/
+    font-size: 1.1em;    /*O tamanho da fonte é definido como 1.1em --> */
+    padding: 1rem;       /*O preenchimento ao redor do conteúdo do elemento é definido como 1rem --> */
+    background-color: #ef233c;   /* A cor de fundo do elemento é definida como #ef233c --> */
+    border-radius: 7px;   /*O raio da borda do elemento é definido como 7px --> */
+    color: white;        /* A cor do texto dentro do elemento é definida como branco --> */
+    right: 50%;          /* A posição à direita do elemento é definida como 50% do elemento pai --> */
+    top: 1rem;           /*A posição superior do elemento é definida como 1rem do elemento pai --> */
+    transform: translateX(50%);  /*O elemento é movido ao longo do eixo X em 50% do seu próprio tamanho --> */
 
-    & i {
-        float: left;
-    }
-}
+    & i {                /*Início da regra para o elemento i dentro da classe .toastt --> */
+        float: left;     /*O elemento i é flutuado para a esquerda --> */
+    }                    /*Fim da regra para o elemento i --> */
+}                        /*Fim da classe .toast--> */
