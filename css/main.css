@@ -1,142 +1,208 @@
-@import "toast.css";
+/* Importa o arquivo toast.css */
 
+/* Define a fonte padrão para todo o documento e remove margens padrão */
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* Define que o overflow do elemento html será oculto */
 html {
     overflow: hidden;
 }
 
-
+/* Estiliza as imagens para preencherem completamente o contêiner */
 .image {
     width: 100%;
     height: 100%;
 
+    /* Estiliza a imagem dentro do contêiner */
     & img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-
     }
 }
 
+/* Define estilos para o efeito de vidro */
 .glass {
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
 
+    /* Define a cor e a opacidade do fundo do efeito de vidro */
     background: rgba(255, 255, 255, 0.15);
+    /* Adiciona uma sombra ao redor do efeito de vidro */
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    /* Aplica um desfoque ao fundo do efeito de vidro */
     backdrop-filter: blur(8.5px);
+    /* Aplica um desfoque ao fundo do efeito de vidro no navegador Chrome */
     -webkit-backdrop-filter: blur(8.5px);
 }
 
+/* Define estilos básicos para o corpo do documento */
 body {
+    /* Define a cor de fundo do corpo */
     background-color: #f3f3f3;
     width: 100%;
+    /* Define a altura do corpo como 100% da altura da viewport */
     height: 100vh;
+    /* Impede a seleção de texto no corpo do documento */
     user-select: none;
 }
 
+/* Define estilos para o elemento com id "horario" */
 #horario {
+    /* Define a posição do elemento como absoluta */
     position: absolute;
+    /* Define o alinhamento do elemento à direita */
     right: 0;
+    /* Define o alinhamento do elemento no topo */
     top: 0;
+    /* Define a cor de fundo do elemento com uma opacidade */
     background-color: #ffffffa4;
+    /* Adiciona preenchimento ao redor do elemento */
     padding: 10px;
+    /* Adiciona borda arredondada ao elemento */
     border-radius: 7px;
+    /* Adiciona margem ao redor do elemento */
     margin: 1rem;
+    /* Define o tamanho da fonte */
     font-size: 1.5em;
 }
 
+/* Define estilos para o elemento <main> */
 main {
+    /* Define a largura do elemento como 100% */
     width: 100%;
+    /* Define a altura do elemento como 40% da altura da viewport */
     height: 40vh;
+    /* Define a posição do elemento como absoluta */
     position: absolute;
+    /* Define o alinhamento vertical do elemento como no centro da viewport */
     top: 50%;
+    /* Define o alinhamento horizontal do elemento como no centro da viewport */
     left: 50%;
+    /* Move o elemento para trás no eixo X e no eixo Y, para centralizá-lo na viewport */
     transform: translateX(-50%) translateY(-50%);
-
+    /* Define um layout flexível com direção de coluna */
     display: flex;
     flex-direction: column;
+    /* Alinha os itens verticalmente no centro */
     align-items: center;
+    /* Distribui o espaço entre os itens */
     justify-content: space-between;
+}
 
+/* Define estilos para a classe "pesquisar" */
+& .pesquisar {
+    /* Define a largura como 50% e centraliza os itens horizontalmente */
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    & .pesquisar {
-        width: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    /* Define a cor de fundo como branco */
+    background-color: white;
+    /* Adiciona uma borda com cor e transparência */
+    border: 1px solid #80808067;
+    /* Adiciona borda arredondada */
+    border-radius: 7px;
 
-        background-color: white;
-        border: 1px solid #80808067;
-        border-radius: 7px;
-
-        & input {
-            background-color: transparent;
-            padding: 10px;
-            width: 100%;
-            border: none;
-            border-radius: 7px;
-            outline: none;
-        }
-
-        & i {
-            user-select: none;
-            font-size: 1.4em;
-        }
-    }
-
-    & .nomeCidade {
-        display: flex;
-        justify-content: center;
-        color: #181818;
-
-        & img {
-            height: 1.5rem;
-        }
-    }
-
-    & .temperatura {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #181818;
-        user-select: none;
-
-        & #temperatura {
-            font-weight: bold;
-            font-size: 2em;
-            user-select: none;
-        }
-    }
-
-    & .container {
-        width: 50%;
-        background-color: #ffffffa4;
+    /* Estiliza o input dentro da classe "pesquisar" */
+    & input {
+        /* Define a cor de fundo como transparente */
+        background-color: transparent;
+        /* Adiciona preenchimento ao redor do input */
         padding: 10px;
+        /* Define a largura como 100% */
+        width: 100%;
+        /* Remove a borda */
+        border: none;
+        /* Adiciona borda arredondada */
         border-radius: 7px;
-        margin: 1rem;
+        /* Remove o contorno ao redor do input */
+        outline: none;
+    }
+
+    /* Estiliza o ícone dentro da classe "pesquisar" */
+    & i {
+        /* Impede a seleção do ícone */
+        user-select: none;
+        /* Define o tamanho da fonte */
+        font-size: 1.4em;
     }
 }
 
-@media screen and (max-width: 700px) {
+/* Estiliza o elemento com a classe "nomeCidade" */
+& .nomeCidade {
+    /* Centraliza os itens horizontalmente */
+    display: flex;
+    justify-content: center;
+    /* Define a cor do texto */
+    color: #181818;
 
+    /* Estiliza a imagem dentro da classe "nomeCidade" */
+    & img {
+        /* Define a altura da imagem */
+        height: 1.5rem;
+    }
+}
+
+/* Estiliza o elemento com a classe "temperatura" */
+& .temperatura {
+    /* Centraliza os itens horizontal e verticalmente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Define a cor do texto */
+    color: #181818;
+    /* Impede a seleção do texto */
+    user-select: none;
+
+    /* Estiliza o elemento com o id "temperatura" dentro da classe "temperatura" */
+    & #temperatura {
+        /* Define o peso da fonte como negrito */
+        font-weight: bold;
+        /* Define o tamanho da fonte */
+        font-size: 2em;
+        /* Impede a seleção do texto */
+        user-select: none;
+    }
+}
+
+/* Estiliza o elemento com a classe "container" */
+& .container {
+    /* Define a largura como 50% */
+    width: 50%;
+    /* Define a cor de fundo com uma opacidade */
+    background-color: #ffffffa4;
+    /* Adiciona preenchimento ao redor do elemento */
+    padding: 10px;
+    /* Adiciona borda arredondada */
+    border-radius: 7px;
+    /* Adiciona margem ao redor do elemento */
+    margin: 1rem;
+}
+
+/* Define estilos para telas com largura máxima de 700px */
+@media screen and (max-width: 700px) {
+    /* Define a largura dos elementos "pesquisar" e "container" como 90% */
     .pesquisar,
     .container {
         width: 90% !important;
     }
 
+    /* Define a altura do elemento "main" como 50% da altura da viewport */
     main {
         height: 50vh;
     }
 }
 
-#iconPais{
+/* Estiliza o elemento com o id "iconPais" */
+#iconPais {
+    /* Impede a seleção do ícone */
     user-select: none;
 }
