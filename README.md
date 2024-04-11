@@ -18,13 +18,13 @@ json
 
 - no diretório do projeto, instale as dependências:
 
-bash
+
 npm install
 
 
 - para utilizar a API Clima Tempo, execute no terminal:
 
-bash
+
 node app.js
 
 # exemplo
@@ -35,8 +35,7 @@ GET /clima/:cidade (Retorna as informações meteorológicas da cidade especific
 - parâmetros de URL
 cidade: Nome da cidade desejada.
 
-- bash
-GET /clima/São Paulo
+- GET /clima/São Paulo
 
 - json
 {
